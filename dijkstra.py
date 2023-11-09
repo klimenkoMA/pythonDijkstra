@@ -1,11 +1,9 @@
-python
+
 def dijkstra(graph, start):
     # Инициализация словарей для хранения расстояний и предшественников
     distances = {vertex: float('infinity') for vertex in graph}
     predecessors = {vertex: None for vertex in graph}
     distances[start] = 0
- Итерируемся по вершинам и обновляем расстояния, если найден более короткий путь через текущую вершину.
-python
     # Итерация по вершинам
     while graph:
         # Выбираем вершину с наименьшим расстоянием
